@@ -92,7 +92,7 @@
                                 neighborScores.push(neighbor.topics[j][1]["score"]);
                             }
                             loadData(neighborScores);
-                            $(this).append("<a href='http://jliu99.github.io/profile.html?id=" + neighborIndex + "'><svg class='svg' id='rel" + i + "'></svg><p style='text-transform:capitalize'>" + neighborName + "</p></a>");
+                            $(this).append("<a href='http://localhost:8086/profile.html?id=" + neighborIndex + "'><svg class='svg' id='rel" + i + "'></svg><p style='text-transform:capitalize'>" + neighborName + "</p></a>");
                             createStagnantSignature("rel" + i);
                             break;
                         }
