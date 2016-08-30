@@ -72,7 +72,7 @@
                     document.getElementById("results").innerHTML = "<p>Sorry, there were no profiles that matched your search.</p>";
                 } else {
                     for (j = 0; j < people.length; j++) {
-                        $("#results-grid").append("<div class='results-item'><div class='results-svg-container'><svg class='svg' id='result" + j + "'></svg></div><h2>" + people[j].authorName + "</h2><a href='http://localhost:8086/profile.html?id=" + indices[j] + "'> > View full profile </a></div>");
+                        $("#results-grid").append("<div class='results-item'><div class='results-svg-container'><svg class='svg' id='result" + j + "'></svg></div><h2>" + people[j].authorName + "</h2><a href='profile.html?id=" + indices[j] + "'> > View full profile </a></div>");
                     }
                     for (j = 0; j < grants.length; j++) {
                          //$("#results-grid").append("<div class='results-item'><div class='results-svg-container'><svg class='svg' id='g-result" + j + "'></svg></div><h2 style='text-transform:uppercase'>" + grants[j].grantName + "</h2><a href='http://localhost:8086/grant.html?id=" + indices[j] + "'> > View full information </a></div></div>");
